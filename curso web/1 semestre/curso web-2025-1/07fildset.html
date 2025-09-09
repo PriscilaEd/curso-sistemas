@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conjunto de campos</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <input type="text" name="nome" id="n" placeholder="Insira seu nome">
+        </fieldset>
+        <fieldset>
+            <legend>Formação</legend>
+            <label for="uf">Estados</label>
+            <select name="estados" id="uf" multiple="multiple">
+                <optgroup label= "Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+        
+                <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                </optgroup>
+        
+                <optgroup label="Região Nordeste">
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+            <input type="text" name="cidade" placeholder="Insira a Cidade">
+        </fieldset>
+    </form>
+</body>
+</html>

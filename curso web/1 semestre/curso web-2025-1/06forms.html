@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <form action="06forms.html" method="post">
+            <label for="nome_id">Nome</label>
+            <input type="text" name="nome" id="nome_id"> <br>
+            <label for="name_id">Nome</label>
+            <input type="text" name="nome" id="name_id" maxlength="20"> <br>
+            <label for="estado_id">Estado</label>
+            <input type="text" name="estado" id="estado_id"> <br> 
+            <label for="email_id">E-mail</label>
+            <input type="email" name="email" id="email_id"> <br>
+            <label for="telefone_id">Telefone</label>
+            <input type="tel" name="telefone" id="telefone_id"> <br>
+            <label for="senha_id">Senha</label>
+            <input type="password" name="senha" id="senha_id"> <br>
+            <label for="data_id">Data</label>
+            <input type="date" name="data" id="data_id"> <br>
+            <label for="data_hora_id">Data e Hora</label>
+            <input type="datetime-local" name="data_hora" id="data_hora_id"> <br>
+            <label for="mes_id">Mês</label>
+            <input type="month" name="mês" id="mes_id"> <br>
+            <label for="ano_id">Ano</label>
+            <input type="year" name="ano" id="ano_id"> <br>
+            <label for="hora_id">Hora</label>
+            <input type="time" name="hora" id="hora_id"> <br>
+            <label for="semana_id">Semana</label>
+            <input type="week" name="semana" id="semana_id"> <br>
+            <label for="msg_id">Mensagem</label>
+            <textarea name="msg" id="msgm_id"></textarea>
+            <textarea name="msg" id="msg_id" maxlength="10"></textarea> <br>
+            <label for="idade_id">Idade</label>
+            <input type="number" name="idade" id="idade_id"> <br>
+
+            <br> <br>
+            
+            <input type="checkbox" value="Java" name="linguagem">Java
+            <input type="checkbox" value="C#" name="linguagem">C#
+            <input type="checkbox" value="PHP" name="linguagem">PHP
+            <input type="checkbox" value="Ruby" name="linguagem">Ruby
+
+            <br> <br>
+
+            <label for="idade_id">Idade</label>
+            <input type="number" name="idade" id="age_id" min="18" max="60"> <br>
+
+            <input type="submit" value="Enviar">
+
+
+        </form>
+    </main>
+</body>
+</html>
