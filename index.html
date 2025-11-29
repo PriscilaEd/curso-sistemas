@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Finanças na Prática - Jogo Educativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <section id="tela-inicial" class="tela ativa">
+            <h1>Finanças na Prática 💸</h1>
+            <p class="subtitulo">
+                Jogo rápido de Educação Financeira <br>
+                (ODS 1, 4 e 8)
+            </p>
+            <button id="btn-comecar" class="btn-primario">Começar</button>
+        </section>
+
+        <section id="tela-perguntas" class="tela">
+            <h2 id="titulo-etapa">Pré-teste</h2>
+            <p id="texto-etapa" class="legenda"></p>
+            <div id="box-pergunta" class="card">
+                <p id="texto-pergunta" class="pergunta"></p>
+                <div id="opcoes" class="opcoes"></div>
+            </div>
+            <div class="area-rodape">
+                <p id="progresso" class="progresso"></p>
+                <button id="btn-proxima" class="btn-primario" disabled>Próxima</button>
+            </div>
+        </section>
+
+        <section id="tela-aula" class="tela">
+            <h2>Mini-aula: Controle de Gastos em 3 Passos</h2>
+            <div class="card texto-aula">
+                <h3>1️⃣ Anotar tudo que entra e sai</h3>
+                <p>
+                    Durante 1 mês, registre todos os ganhos (salário, bicos, bolsas)
+                    e todos os gastos (contas, mercado, lazer, delivery…).
+                </p>
+                <h3>2️⃣ Classificar os gastos</h3>
+                <ul>
+                    <li><b>Fixos:</b> aluguel, luz, internet, transporte fixo…</li>
+                    <li><b>Variáveis:</b> mercado, lazer, delivery…</li>
+                    <li><b>Supérfluos:</b> coisas que não são essenciais.</li>
+                </ul>
+                <h3>3️⃣ Ajustar o orçamento</h3>
+                <p>
+                    Compare o total que entra com o que sai. Se estiver gastando mais
+                    do que ganha, corte supérfluos e renegocie contas. Defina um valor
+                    por mês para guardar.
+                </p>
+                <h3>Montando um orçamento simples</h3>
+                <p>
+                    Regra clássica de exemplo:
+                </p>
+                <ul>
+                    <li>50% para necessidades (moradia, contas, comida)</li>
+                    <li>30% para desejos (lazer, hobbies)</li>
+                    <li>20% para objetivos (pagar dívidas, reserva, investimentos)</li>
+                </ul>
+                <h3>Comprar ou guardar?</h3>
+                <p>
+                    Antes de comprar, pergunte:
+                </p>
+                <ul>
+                    <li>Eu realmente preciso disso agora?</li>
+                    <li>Esse gasto cabe no meu orçamento deste mês?</li>
+                    <li>Se eu não comprar, esse valor pode me aproximar de um objetivo maior?</li>
+                </ul>
+            </div>
+            <button id="btn-ir-desafios" class="btn-primario">
+                Ir para os desafios 🚀
+            </button>
+        </section>
+
+        <section id="tela-resultado" class="tela">
+            <h2>Resultado da Partida</h2>
+            <div class="card">
+                <p><b>Acertos no pré-teste:</b> <span id="res-pre"></span></p>
+                <p><b>Acertos nos desafios (pós-teste):</b> <span id="res-pos"></span></p>
+                <p><b>Diferença (ganho de acertos):</b> <span id="res-dif"></span></p>
+            </div>
+            <div class="card">
+                <h3>Estatísticas gerais neste navegador</h3>
+                <p><b>Número de sessões jogadas:</b> <span id="res-sessoes"></span></p>
+                <p><b>Média de acertos no pré-teste:</b> <span id="res-media-pre"></span></p>
+                <p><b>Média de acertos no pós-teste:</b> <span id="res-media-pos"></span></p>
+            </div>
+            <button id="btn-jogar-novamente" class="btn-primario">
+                Jogar novamente 🔁
+            </button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
