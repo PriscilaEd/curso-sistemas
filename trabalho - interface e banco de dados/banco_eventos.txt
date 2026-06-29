@@ -1,0 +1,28 @@
+Alunos do trabalho:
+Priscila E. Teixeira, 007605
+Marlon Ferreira, 007650
+-----------------------------------
+
+CREATE DATABASE trabalho_eventos;
+
+USE trabalho_eventos;
+
+CREATE TABLE eventos (
+    id_evento INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    local VARCHAR(100),
+    data_evento VARCHAR(10),
+    capacidade INT
+);
+
+INSERT INTO eventos (nome, local, data_evento, capacidade) VALUES
+('Lollapalooza Brasil', 'Autódromo de Interlagos', '20/03/2026', 100000),
+('Rock in Rio', 'Parque Olímpico do Rio de Janeiro', '04/09/2026', 100000),
+('Tomorrowland Brasil', 'Parque Maeda', '10/10/2026', 180000),
+('The Town', 'Autódromo de Interlagos', '06/09/2026', 100000),
+('João Rock', 'Parque Permanente de Exposições', '01/08/2026', 70000),
+('Festival de Verão Salvador', 'Arena Festival - Wet Eventos', '24/01/2027', 50000),
+('Planeta Atlântida', 'Praia de Atlântida', '30/01/2027', 80000),
+('Primavera Sound São Paulo', 'Autódromo de Interlagos', '05/12/2026', 100000),
+('Time Warp Brasil', 'Neo Química Arena', '01/05/2026', 50000),
+('Universo Paralello', 'Praia de Pratigi', '27/12/2026', 20000);
